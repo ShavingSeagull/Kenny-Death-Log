@@ -1,0 +1,84 @@
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: orange;
+  font-family: "Montserrat", sans-serif;
+}
+
+.parallax {
+  background-image: url("/static/images/logo_boys.png"),
+  url("/static/images/orange_flip.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%, cover; /* USE 100% WHEN DOING MEDIA Q BELOW */
+  height: 100%; /* MEDIA QUERY THIS FOR SMALLER SCREENS */
+}
+
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: right;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: rgba(255,255,255,1);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 3px 3px 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  padding: 10px 20px 14px 20px;
+  color: #33331a;
+}
+
+.navbar a:hover {
+  background-color: #000;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #33331a;
+  color: #000;
+}
+
+#navButton {
+  background-color: white;
+  box-shadow: 3px 3px 5px;
+}
+
+#navList {
+  text-align: left;
+}
+
+.icon-bar {
+  background-color: black;
+}
+
+#mainContent {
+  background-color: black;
+  font-size: 36px;
+  height: 1000px; /* SUBJECT TO CHANGE */
+}
+
+footer > p {
+  background-color: white;
+  color: black;
+  font-size: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    background-color: rgba(255,255,255,0);
+    box-shadow: none;
+    font-size: 1.5em;
+  }
+
+  #navList {
+    background-color: rgba(255,255,255,1);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 3px 3px 5px;
+  }
+
+  footer > p {
+    font-size: 0.4em;
+  }
+}
