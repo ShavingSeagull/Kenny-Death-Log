@@ -1,4 +1,21 @@
 {% extends "index.html" %}
 {% block content %}
+  <div class="row">
+    <div id="homeContent" class="col-sm-8 verticalLine">
+      <h1>Welcome to Kenny's Death Log!</h1>
+      <h3 id="homeHeader">The most depressing corner of the internet for everyone's favourite orange parka-wearing poor kid.</h3>
 
+      <p>Kenny's Death Log is the number one destination for the lowdown on all the ways Kenny has died
+      over the 21 seasons of South Park so far.</p>
+
+      <p>So if you fancy getting your macabre groove on, just head over to the <a href="#">deaths</a> page and
+      give it a good peruse. I'm sure you'll find some manner of demise to lift those eyebrows (massive defecation, anyone?)</p>
+
+      <p>....and remember, in the words of everyone's favourite poor kid, "Mmm mm mmm mm mmm!"</p>
+    </div>
+
+    <div class="col-sm-4">
+      <img id="kenny" src="{{ url_for('static', filename="images/kenny-wave.gif") }}" alt="Kenny">
+    </div>
+  </div>
 {% endblock %}

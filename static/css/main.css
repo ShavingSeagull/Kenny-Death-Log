@@ -12,8 +12,8 @@ body {
   url("/static/images/orange_flip.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100%, cover; /* USE 100% WHEN DOING MEDIA Q BELOW */
-  height: 100%; /* MEDIA QUERY THIS FOR SMALLER SCREENS */
+  background-size: 100%, cover;
+  height: 100%;
 }
 
 .navbar {
@@ -41,7 +41,7 @@ body {
 }
 
 #navButton {
-  background-color: white;
+  background-color: #f2f2f2;
   box-shadow: 3px 3px 5px;
 }
 
@@ -53,16 +53,57 @@ body {
   background-color: black;
 }
 
-#mainContent {
+#parallaxContent {
   background-color: black;
-  font-size: 36px;
-  height: 1000px; /* SUBJECT TO CHANGE */
+  padding: 50px 0 0 0;
+}
+
+#contentButton {
+  position: absolute;
+  top: 93%;
+  left: 48%;
+  opacity: 1;
+}
+
+#contentButton > a {
+  color: white;
+  font-size: 3em;
+}
+
+#mainContent {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 6px 6px 8px #5c5c3d;
+  color: black;
+  padding: 30px 50px 30px 50px;
+  width: 95%;
 }
 
 footer > p {
-  background-color: white;
-  color: black;
-  font-size: 0.5em;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
+/* Home.html */
+#kenny {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#homeHeader {
+  padding: 20px 0 20px 0;
+}
+
+.verticalLine {
+  border-right: solid thick black;
+  height: 100%;
+}
+
+#homeContent > p {
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -79,6 +120,28 @@ footer > p {
   }
 
   footer > p {
-    font-size: 0.4em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  #kenny {
+    display: none;
+  }
+
+  .verticalLine {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 605px) {
+
+  .parallax {
+    height: 70%;
+  }
+
+  #contentButton {
+    top: 62%;
   }
 }

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kenny's Death Log</title>
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
-  <!--<link rel="stylesheet" href="../static/lib/css/bootstrap.min.css"/>-->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}">
   <script src="{{ url_for ('static', filename='lib/js/jquery.min.js') }}"></script>
@@ -30,19 +30,19 @@
         </ul>
       </div>
     </nav>
+    <div id="contentButton"><a href="#parallaxContent"><span class="glyphicon glyphicon-circle-arrow-down"></span></a></div>
   </header>
 
-  <div id="mainContent">
-    <div class="container">
+  <div id="parallaxContent">
+    <div id="mainContent" class="container">
       {% block content %}
       {% endblock %}
-
-      <footer>
-        <p>
-          &copy; Scott Kipp - Kenny's Death Log | Stream Two
-        </p>
-      </footer>
     </div>
+    <footer class="container">
+      <p>
+        &copy; Scott Kipp - Kenny's Death Log | Stream Two
+      </p>
+    </footer>
   </div>
 
   <!--<div class="parallax"></div>-->
