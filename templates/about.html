@@ -1,8 +1,8 @@
 {% extends "index.html" %}
 {% block content %}
-  <div class="row">
-    <div class="col-sm-6">
-      <h2>So, why create a database of Kenny's deaths?</h2>
+  <section class="row">
+    <article class="col-sm-6 aboutContent">
+      <h2 id="aboutHeader1">So, why create a database of Kenny's deaths?</h2>
 
       <p>What a silly question - because this is a greater use of my time than looking at cat pictures, of course!</p>
       <p>Since South Park first aired in 1997 (how old do you feel now?), Kenny's gruesome deaths have been one, if not
@@ -11,12 +11,41 @@
       finger at South Park, even if they haven't seen the show. Does one need a better reason to make a website
       about it?</p>
       <p>....that and I'm a massive nerd for statistics.</p>
-    </div>
-    <div class="col-sm-6">
+    </article>
+    <article class="col-sm-6">
       <video controls="controls" preload="auto">
         <source src="{{ url_for('static', filename="video/oh-my-god.mp4") }}" type="video/mp4">
+        <source src="{{ url_for('static', filename="video/ph-my-god.ogv") }}" type="video/ogg">
+        <source src="{{ url_for('static', filename="video/oh-my-god.webm") }}" type="video/webm">
+        Your browser doesn't support HTML5 video.
       </video>
-    </div>
-  </div>
+    </article>
+  </section>
+  <section class="row">
+    <article class="col-xs-12 aboutContent">
+      <h2 id="aboutHeader2">I've never heard of South Park. What is it about?</h2>
+
+      <p>What!? I assume you've either been in prison for the last three decades or you're trying to be one of the
+        'edgy' kids of today who are corrupting the moral fabric of society <b>*incoherent grumbling*</b>.....</p>
+      <p>Nevertheless, you can colour me surprised. I will, however, fill you in.
+        <a href="http://www.southparkstudios.co.uk/" target="_blank">South Park</a> focuses on the lives of the four main characters:
+        <a href="https://en.wikipedia.org/wiki/Eric_Cartman" target="_blank">Eric Cartman</a>,
+      <a href="https://en.wikipedia.org/wiki/Stan_Marsh" target="_blank">Stan Marsh</a>,
+      <a href="https://en.wikipedia.org/wiki/Kyle_Broflovski" target="_blank">Kyle Broflovski</a> and
+      <a href="https://en.wikipedia.org/wiki/Kenny_McCormick" target="_blank">Kenny McCormick</a>.
+      The boys live in the town of South Park, Colorado. With its snowy peaks and small mountain town life, you wouldn't
+      be mistaken for thinking life in SP would be somewhat uneventful. However, over the past 21 seasons, the residents
+      have encountered aliens, holy prophets, radical ginger kids, hordes of Peruvian pan-flute players,
+      sociopathic therapists suffering form Multiple Personality Disorder, a mecha Barbara Streisand and the Mongols.</p>
+      <p>The older series focused on fictitious storylines created by Matt Stone and Trey Parker. However, the later
+      seasons have used real life scenarios and political sagas to shape their episodes. This has led to some
+      humorous situations, such as the recent addition of the PC Principal character as well as long standing favourite,
+      school teacher Mr. Garrison, becoming President Trump, complete with festive orange glow. Certainly not for the
+      faint of heart, this cartoon definitely isn't one for the kids. South Park's reputation for deliberately causing
+      offence has led to its dominance as one of the longest running animated series of all time. While being
+      purposefully provocative, it has always escaped most negative attention, as viewers consider it a tongue-in-cheek
+      breath of fresh air, especially in the current mad politically correct climate we live in.</p>
+    </article>
+  </section>
 
 {% endblock %}

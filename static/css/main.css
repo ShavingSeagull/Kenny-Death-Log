@@ -112,6 +112,22 @@ video {
   height: auto;
 }
 
+.aboutContent > p {
+  padding-top: 15px;
+}
+
+.aboutContent a:hover {
+  text-decoration: none;
+}
+
+#aboutHeader1 {
+  padding-bottom: 20px;
+}
+
+#aboutHeader2 {
+  padding: 50px 0 20px 0;
+}
+
 @media screen and (max-width: 768px) {
   .navbar {
     background-color: rgba(255,255,255,0);
