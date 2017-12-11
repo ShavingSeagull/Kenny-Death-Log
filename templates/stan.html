@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% block content %}
+  <section>
+    <article class="character-div">
+      <h2 class="characterHeader">Stan Marsh</h2>
+      <img id="stan" src="{{ url_for ('static', filename="images/stan.png") }}" alt="Stan">
+
+      <p><b>Best Friend:</b> Kyle</p>
+      <p><b>Rival:</b> None</p>
+      <p><b>Greatest Quotes:</b></p>
+      <p><i>"Why'd you have to rub your clit on stage, Dad?"</i></p>
+      <p><i>"Renting DVDs is more ancient than Madonna's boobs!"</i></p>
+      <p><i>"All people from Jersey do is hump and punch each other"</i></p>
+      <p><i>"Look what the postman brought me! It's a big brown package from Afghanistan!"</i></p>
+
+      <p class="characterPara">Stan is one of the only voices of reason in South Park, with a wisdom that seems beyond
+      his years. His mannerisms reflect this, as he is often seen walking with his hands in his pockets, deep in thought.
+      He has also experienced clinical depression as a result of seeing the world from an adult perspective when he
+        reached the age of 10. Besides this, he is the natural leader of the group when Cartman hasn't led them into
+      yet another scheme to wreck havok on South Park.</p>
+      <p class="characterPara">Stan's strong bond with Kyle has been prevalent since the first season and they have
+      remained the very best of friends since then, much like their fathers, Randy and Gerald. Speaking of embarrassing
+      parents, Randy has evolved to become one of the shows funniest characters, constantly getting himself and others
+      into hair-brained situations, much to Stan's chagrin.</p>
+    </article>
+  </section>
+{% endblock %}

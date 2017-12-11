@@ -132,6 +132,48 @@ video {
   padding: 50px 0 20px 0;
 }
 
+/* Character pages */
+.character-div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.characterPara {
+  padding-top: 15px;
+}
+
+.characterHeader {
+  padding-bottom: 30px;
+}
+
+#cartman {
+  float: right;
+  width: 50%;
+  height: 50%;
+  margin: 0 0 20px 20px;
+}
+
+#stan {
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 0 0 20px 20px;
+}
+
+#kyle {
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 0 0 20px 20px;
+}
+
+#kenny_char {
+  float: right;
+  width: 30%;
+  height: 30%;
+  margin: 0 0 20px 20px;
+}
+
 @media screen and (max-width: 767px) {
   .navbar {
     background-color: rgba(255,255,255,0);

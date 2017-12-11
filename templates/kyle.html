@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% block content %}
+  <section>
+    <article class="character-div">
+      <h2 class="characterHeader">Kyle Broflovski</h2>
+      <img id="kyle" src="{{ url_for ('static', filename="images/kyle.png") }}" alt="Kyle">
+
+      <p><b>Best Friend:</b> Stan</p>
+      <p><b>Rival:</b> Cartman</p>
+      <p><b>Greatest Quotes:</b></p>
+      <p>Stan: <i>"What's a muff cabbage?"</i><br>
+      Kyle: <i>"It's a Jersey thing"</i></p>
+      <p>Cartman: <i>"Don't mind Kyle everyone, he's just got a little sand in his vagina"</i><br>
+      Kyle: <i>"I don't have sand in my vagina!"</i></p>
+      <p><i>"You know, I learned something today..."</i></p>
+      <p><i>"You are all just a bunch of ass-ramming uncle f*****s!"</i></p>
+
+      <p class="characterPara">Kyle was always going to have a hard life in South Park being a Jew. Not that the town
+      is in any way anti-semitic, but seeing as Cartman once dressed as Hitler and led a march through town against the
+      Jews (the people had no idea what the German chants meant), little more needs to be said. Kyle and Cartman's
+      rivalry has provided some of the funniest moments of the show's history, with Cartman blaming every one of Kyle's
+      shortcomings on his religion.</p>
+      <p class="characterPara">Perhaps the only other voice of reason in South Park bar Stan, it's no surprise that the
+      two of them are the best of friends. Once the shenanigans are over, it's usually Kyle's usual line of,
+      "You know, I learned something today..." that closes the show. Somewhat cautious (which is naturally due to his
+      religion if you listen to Cartman), Kyle often proves to be the wet blanket who tries to do the right thing at all
+      times. This can make him somewhat irritating at times, but nevertheless still an integral part of the show.</p>
+    </article>
+  </section>
+{% endblock %}
