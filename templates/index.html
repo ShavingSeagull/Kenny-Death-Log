@@ -25,7 +25,17 @@
       <div class="collapse navbar-collapse" id="navList">
         <ul class="nav navbar-nav">
           <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">About
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/about">This Database</a></li>
+              <li><a href="#">Eric Cartman</a></li>
+              <li><a href="#">Stan Marsh</a></li>
+              <li><a href="#">Kyle Broflovski</a></li>
+              <li><a href="#">Kenny McCormick</a></li>
+            </ul>
+          </li>
           <li><a href="#">Deaths</a></li>
         </ul>
       </div>

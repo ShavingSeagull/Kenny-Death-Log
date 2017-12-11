@@ -53,6 +53,10 @@ body {
   background-color: black;
 }
 
+.dropdown-menu {
+  border-radius: 10px;
+}
+
 #parallaxContent {
   background-color: black;
   padding: 50px 0 0 0;
@@ -128,7 +132,7 @@ video {
   padding: 50px 0 20px 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
     background-color: rgba(255,255,255,0);
     box-shadow: none;
@@ -144,9 +148,6 @@ video {
   footer > p {
     font-size: 0.8em;
   }
-}
-
-@media screen and (max-width: 767px) {
 
   #kenny {
     display: none;
@@ -165,5 +166,13 @@ video {
 
   #contentButton {
     top: 62%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .dropdown-menu > li {
+    font-size: 1.2em;
+    padding-top: 10px;
   }
 }
