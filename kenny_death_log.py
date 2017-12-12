@@ -1,7 +1,14 @@
 from flask import Flask
 from flask import render_template
+from pymongo import MongoClient
+import json
 
 app = Flask(__name__)
+
+MONGODB_HOST = 'localhost'
+MONGODB_PORT = 27017
+DBS_NAME = 'kennysDeaths'
+COLLECTION_NAME = 'deaths'
 
 
 @app.route('/')
@@ -27,6 +34,17 @@ def kyle():
 @app.route('/kenny')
 def kenny():
     return render_template("kenny.html")
+
+@app.route('/kennysDeaths/deaths')
+def death_methods():
+    FIELDS = {
+        'SEASON': True, 'EPISODE': False, 'METHOD': True, 'QUOTE': True
+    }
+
+    with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
+        collection = conn[DBS_NAME][COLLECTION_NAME]
+        deaths = collection.find(projection=FIELDS)
+        return json.dumps(list(deaths))
 
 
 if __name__ == '__main__':
