@@ -43,7 +43,7 @@ def deaths_page():
 def death_methods():
 
     FIELDS = {
-        'SEASON': True, 'EPISODE': False, 'METHOD': True, 'QUOTE': True
+        'SEASON': True, 'EPISODE': True, 'METHOD': True, 'QUOTE': True
     }
 
     with MongoClient(MONGODB_HOST, MONGODB_PORT) as conn:
