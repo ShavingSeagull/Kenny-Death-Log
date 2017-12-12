@@ -35,8 +35,13 @@ def kyle():
 def kenny():
     return render_template("kenny.html")
 
+@app.route('/deaths')
+def deaths_page():
+    return render_template("deaths.html")
+
 @app.route('/kennysDeaths/deaths')
 def death_methods():
+
     FIELDS = {
         'SEASON': True, 'EPISODE': False, 'METHOD': True, 'QUOTE': True
     }

@@ -1,0 +1,82 @@
+{% extends "index.html" %}
+{% block content %}
+  <section class="application">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="tour">
+          <h4>Feeling lost? Why not take the tour!</h4>
+          <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Let's Go!</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Line Chart (deaths by season) -->
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Number of Deaths per Season
+          </div>
+          <div class="chart-stage">
+            <div id="seasonsChart"></div>
+          </div>
+        </div>
+      </div>
+      <figure class="col-sm-4">
+        <img id="deadKenny" src="{{ url_for ('static', filename='images/kenny-dead.png') }}" alt="Kenny">
+      </figure>
+    </div>
+
+    <!-- Pie Chart (types of death) -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Type of Death
+          </div>
+          <div class="chart-stage">
+            <div id="deathsChart"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bar Chart (number of times quote used) -->
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Number of Times Quote Said
+          </div>
+          <div class="chart-stage">
+            <div id="quotesChart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Death selection menu -->
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Select Type of Death:
+          </div>
+          <div class="chart-stage">
+            <div id="deathSelect"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Total deaths metric -->
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Total Number of Deaths
+          </div>
+          <div class="chart-stage">
+            <div id="totalDeaths"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
