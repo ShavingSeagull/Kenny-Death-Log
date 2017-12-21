@@ -136,8 +136,8 @@ function makeGraphs(error, methodOfDeath) {
 
     //quoteDim.filter(function(d) {return d === "Yes"});
     quotesChart
-        .width(500)
-        .height(200)
+        .width(quoteChartWidth)
+        .height(quoteChartHeight)
         .dimension(quoteDim)
         .group(numQuoteUse)
         .valueAccessor(function (p) {

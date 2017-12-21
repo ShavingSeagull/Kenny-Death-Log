@@ -175,9 +175,74 @@ video {
 }
 
 /* Deaths.html */
+#tour {
+  margin-bottom: 10px;
+}
+
+#tour > h4 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+#tour > button {
+  border: none;
+  border-radius: 7px;
+  box-shadow: 3px 3px 5px;
+  font-size: 1.3em;
+  font-weight: bold;
+  width: 120px;
+}
+
+#tour > button:hover {
+  opacity: 0.8;
+}
+
+hr {
+  background: rgba(0,0,0,1);
+  border-radius: 10px;
+  height: 1px;
+}
+
+#firstChart {
+  margin-top: 30px;
+}
+
 #deadKenny {
-  width: 50%;
-  height: 50%;
+  width: 70%;
+  height: 70%;
+}
+
+.chart-title {
+  background-color: orange;
+}
+
+.chart-title > p {
+  font-size: 1.1em;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.chart-wrapper {
+  border: solid 1px black;
+  margin-bottom: 40px;
+}
+
+.dc-select-menu {
+  width: 80%;
+  height: 31px;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 0;
+}
+
+#totalDeaths {
+  font-size: 1.3em;
+}
+
+#quotesChart {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -198,6 +263,10 @@ video {
   }
 
   #kenny {
+    display: none;
+  }
+
+  #deadKenny {
     display: none;
   }
 

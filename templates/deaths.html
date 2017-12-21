@@ -7,15 +7,16 @@
           <h4>Feeling lost? Why not take the tour!</h4>
           <button class="intro_button" type="button" autofocus onclick="javascript:introJs().start();">Let's Go!</button>
         </div>
+        <hr>
       </div>
     </div>
 
     <!-- Line Chart (deaths by season) -->
-    <div class="row">
+    <div id="firstChart" class="row">
       <div class="col-sm-8">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Number of Deaths per Season
+            <p>Number of Deaths per Season</p>
           </div>
           <div class="chart-stage">
             <div id="seasonsChart"></div>
@@ -32,7 +33,7 @@
       <div class="col-sm-6">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Type of Death
+            <p>Type of Death</p>
           </div>
           <div class="chart-stage">
             <div id="deathsChart"></div>
@@ -44,21 +45,21 @@
       <div class="col-sm-6">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Number of Times Quote Said
+            <p>Number of Times Quote Said</p>
           </div>
           <div class="chart-stage">
             <div id="quotesChart"></div>
           </div>
         </div>
       </div>
-    </div>
+    <!--</div>-->
 
     <!-- Death selection menu -->
-    <div class="row">
-      <div class="col-sm-6">
+    <!--<div class="row">-->
+      <div class="col-sm-3">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Select Type of Death:
+            <p>Select Type of Death:</p>
           </div>
           <div class="chart-stage">
             <div id="deathSelect"></div>
@@ -67,10 +68,10 @@
       </div>
 
       <!-- Total deaths metric -->
-      <div class="col-sm-6">
+      <div class="col-sm-3">
         <div class="chart-wrapper">
           <div class="chart-title">
-            Total Number of Deaths
+            <p>Total Number of Deaths</p>
           </div>
           <div class="chart-stage">
             <div id="totalDeaths"></div>
