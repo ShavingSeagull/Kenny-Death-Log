@@ -203,7 +203,7 @@ hr {
   height: 1px;
 }
 
-#firstChart {
+#firstRow {
   margin-top: 30px;
 }
 
@@ -230,15 +230,17 @@ hr {
 
 .dc-select-menu {
   width: 80%;
-  height: 31px;
-  font-size: 15px;
+  height: 40px;
+  font-size: 18px;
   text-align: center;
   padding-top: 4px;
   padding-bottom: 0;
 }
 
 #totalDeaths {
-  font-size: 1.3em;
+  font-size: 2em;
+  font-weight: 900;
+  float: top;
 }
 
 #quotesChart {

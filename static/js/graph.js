@@ -42,9 +42,6 @@ function makeGraphs(error, methodOfDeath) {
     var selectDim = ndx.dimension(function (d) {
         return d["METHOD"];
     });
-    /*var episodeDim = ndx.dimension(function (d) {
-        return d["episode"];
-    });*/
 
     function reduceAdd(p, v) {
         if (v["QUOTE"] == "Yes") {
@@ -73,7 +70,6 @@ function makeGraphs(error, methodOfDeath) {
         return d["METHOD"];
     });
     var allDeaths = ndx.groupAll();
-    //var numEpisode = episodeDim.group();
 
     // Values to be used in charts
     var minSeason = seasonDim.bottom(1)[0]["SEASON"];
@@ -91,7 +87,6 @@ function makeGraphs(error, methodOfDeath) {
         .dimension(selectDim)
         .group(numSelectMethod);
 
-    deathSelect.render();
 
     totalDeaths
         .formatNumber(d3.format("d"))
@@ -99,9 +94,7 @@ function makeGraphs(error, methodOfDeath) {
             return d;
         })
         .group(allDeaths);
-        //.formatNumber(d3.format(".3s"));
 
-    totalDeaths.render();
 
     seasonsChart
         .ordinalColors(["#C96A23"])
@@ -119,7 +112,6 @@ function makeGraphs(error, methodOfDeath) {
         .renderVerticalGridLines(true)
         .xAxis().ticks(21);
 
-    seasonsChart.render();
 
     deathsChart
         .width(deathChartWidth)
@@ -132,9 +124,7 @@ function makeGraphs(error, methodOfDeath) {
         .dimension(typeDim)
         .group(numDeathTypes);
 
-    deathsChart.render();
 
-    //quoteDim.filter(function(d) {return d === "Yes"});
     quotesChart
         .width(quoteChartWidth)
         .height(quoteChartHeight)
@@ -149,6 +139,6 @@ function makeGraphs(error, methodOfDeath) {
         .yAxisLabel("Number of times")
         .xAxis().ticks(21);
 
-    quotesChart.render();
-    //quoteDim.filterAll();
+
+    dc.renderAll();
 }
