@@ -1,0 +1,1 @@
+web: gunicorn kenny_death_log:app
