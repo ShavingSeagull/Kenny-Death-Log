@@ -61,6 +61,7 @@ function makeGraphs(error, methodOfDeath) {
         return {count: 0};
     }
 
+
     // Metrics
     var numDeathsBySeason = seasonDim.group();
     var numDeathTypes = typeDim.group();

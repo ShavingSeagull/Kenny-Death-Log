@@ -1,6 +1,3 @@
 .git/
 .idea/
-static/images/
-static/lib/
-static/video/
 venv/

@@ -288,10 +288,17 @@ hr {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 856px) {
 
   .dropdown-menu > li {
     font-size: 1.2em;
     padding-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 855px) {
+
+  .dc-select-menu {
+    font-size: 14px;
   }
 }
