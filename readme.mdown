@@ -1,0 +1,63 @@
+# Kenny's Death Log
+
+## Overview
+
+### Current Version
+
+The current version is **1.0**.
+
+You can find the live site on [Heroku](https://kenny-death-log.herokuapp.com/).
+
+### Why was it created?
+
+This is the end of stream project for Code Institute's Stream Two, which focuses on front-end and back-end web development. The site is written in HTML, CSS, JavaScript and Python.
+
+### Its purpose?
+
+To utilise the charting libraries (Dc, D3, Crossfilter etc) to create charts displaying a selection of data.
+
+### Where did the inspiration come from?
+
+The inspiration for this project came from the popular TV series, South Park. The Kenny character is constantly dying in hilarious and unfortunate ways and, considering the show has been running for 21 seasons, provided enough data to compile into a site. Data can often be quite dull (world poverty rates, anyone?), so I wanted to focus on something a little more appealing.
+
+## Features
+
+The major focus of this website is to display the dataset created to chart the number of times and the different methods Kenny has died in the South Park TV series only (not including the movie or games).
+
+### Pages of the site:
+- Home
+- About
+	- About the Database and Show
+	- Eric Cartman
+  - Kyle Broflovski
+  - Stan Marsh
+  - Kenny McCormick
+- Deaths
+
+## Technology
+
+### Tech used:
+- [Flask](http://flask.pocoo.org/)
+	- I use **Flask** to handle page routing
+- [Bootstrap](https://getbootstrap.com/)
+	- I use **Bootstrap** to give my project a simple, responsive layout
+- [jQuery](https://jquery.com/)
+	- I use **jQuery** to handle some of the functionality of the site
+- [Dc.js](https://dc-js.github.io/dc.js/)
+  - I use the **Dc.js** library for data visualisation and analysis
+- [D3.js](https://d3js.org/)
+  - I use the **D3.js** library for data visualisation
+- [Crossfilter](http://square.github.io/crossfilter/)
+  - I use **Crossfilter** for data filtering
+- [Keen](https://github.com/keen)
+  - I use **Keen** for the dashboards
+- [Queue](https://github.com/d3/d3-queue)
+  - I use **Queue** for asynchronous tasking
+- [Intro.js](https://introjs.com/)
+  - I use **Intro.js** to handle the tour guide
+- Manual testing
+	- The site is manually tested, which is sufficient for this project
+
+## Acknowledgements
+
+As always, I'd like to thank [Matt Rudge](https://github.com/lechien73) of the Code Institute for his eternal wisdom, which has helped me out of a few binds during this project.
