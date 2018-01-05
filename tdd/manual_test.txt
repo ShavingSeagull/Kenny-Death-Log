@@ -28,7 +28,7 @@ b) Does the background scale down to respond to the size of the screen?
    - Yes/Pass
 
 c) Does the content inside the parallax section respond properly on a desktop screen?
-   - (STILL UNDER CONSTRUCTION)
+   - Yes/Pass
 
 d) Does the content change in accordance to Bootstrap columns when viewed on different screens?
    - Yes/Pass
@@ -52,11 +52,12 @@ a) Does the Line Chart display the data correctly?
    - Mostly/Partial Pass
      - Note: Dc.js Line Charts are not supposed to display null values as zero on the chart, even though
        Javascript interprets Null as zero. It does display them as zero on things such as Bar and Row Charts,
-       but Line Charts are the exception by design. A workaround is extremely difficult, but being attempted.
-       Records with zero as an entry that are surrounded by entries with a positive value are simply crossed over
-       by the chart, as is evident with Season 10 on the X-Axis of the Line Chart on this site.
+       but Line Charts are the exception by design. A workaround is extremely difficult, but was attempted extensively
+       to no avail. Records with zero as an entry that are surrounded by entries with a positive value are simply
+       crossed over by the chart, as is evident with Season 10 on the X-Axis of the Line Chart on this site. A row chart
+       could have been used, but I really wanted to incorporate a line chart, as it looks aesthetically better.
 
-b) Do the other charts display their relevent data records correctly on page load?
+b) Do the other charts display their relevant data records correctly on page load?
    - Yes/Pass
 
 c) Do the charts utilise Crossfilter correctly to update when a certain selection is made on any one chart?
