@@ -98,7 +98,7 @@ footer > p {
 /* Home.html */
 #kenny {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
@@ -318,6 +318,14 @@ hr {
   }
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1699px) {
+
+  #kenny {
+    width: 90%;
+    height: auto;
+  }
+}
+
 @media screen and (min-width: 1400px) and (max-width: 1549px) {
 
   #stan {
@@ -371,6 +379,14 @@ hr {
     width: 80%;
     height: auto;
     padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+
+  #kenny {
+    width: 70%;
+    height: auto;
   }
 }
 
