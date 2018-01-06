@@ -1,9 +1,9 @@
 {% extends "index.html" %}
 {% block content %}
-  <section>
-    <article class="character-div">
+  <section class="row">
+    <img id="kyle" class="col-lg-6" src="{{ url_for ('static', filename="images/kyle.png") }}" alt="Kyle">
+    <article class="col-lg-6">
       <h2 class="characterHeader">Kyle Broflovski</h2>
-      <img id="kyle" src="{{ url_for ('static', filename="images/kyle.png") }}" alt="Kyle">
 
       <p><b>Best Friend:</b> Stan</p>
       <p><b>Rival:</b> Cartman</p>

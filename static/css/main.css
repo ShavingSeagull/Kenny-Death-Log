@@ -83,6 +83,11 @@ body {
   width: 95%;
 }
 
+footer {
+  height: 100%;
+  padding-left: 60px;
+}
+
 footer > p {
   color: white;
   font-size: 1em;
@@ -133,45 +138,41 @@ video {
 }
 
 /* Character pages */
-.character-div {
-  display: inline-block;
-  vertical-align: top;
-}
-
 .characterPara {
   padding-top: 15px;
 }
 
 .characterHeader {
+  display: inline-block;
   padding-bottom: 30px;
 }
 
 #cartman {
-  float: right;
-  width: 40%;
-  height: 40%;
-  margin: 0 0 20px 20px;
+  float: left;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 20px 0;
 }
 
 #stan {
-  float: right;
-  width: 30%;
-  height: 30%;
-  margin: 0 0 20px 20px;
+  float: left;
+  max-width: 40%;
+  height: auto;
+  margin: 0 20px 20px 0;
 }
 
 #kyle {
-  float: right;
-  width: 30%;
-  height: 30%;
-  margin: 0 0 20px 20px;
+  float: left;
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0 20px 0;
 }
 
 #kenny_char {
-  float: right;
-  width: 30%;
-  height: 30%;
-  margin: 0 0 20px 20px;
+  float: left;
+  max-width: 45%;
+  height: auto;
+  margin: 0 0 20px 0;
 }
 
 /* Deaths.html */
@@ -247,6 +248,31 @@ hr {
   width: 100%;
 }
 
+/* Media Queries */
+@media screen and (max-width: 605px) {
+
+  .parallax {
+    height: 70%;
+  }
+
+  #contentButton {
+    top: 62%;
+  }
+}
+
+@media screen and (max-width: 665px) {
+
+  #stan {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #kenny_char {
+    max-width: 50%;
+    height: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navbar {
     background-color: rgba(255,255,255,0);
@@ -277,14 +303,10 @@ hr {
   }
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (min-width: 768px) and (max-width: 855px) {
 
-  .parallax {
-    height: 70%;
-  }
-
-  #contentButton {
-    top: 62%;
+  .dc-select-menu {
+    font-size: 14px;
   }
 }
 
@@ -296,9 +318,87 @@ hr {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 855px) {
+@media screen and (min-width: 1400px) and (max-width: 1549px) {
 
-  .dc-select-menu {
-    font-size: 14px;
+  #stan {
+    max-width: 35%;
+    height: auto;
+  }
+
+  #kyle {
+    max-width: 45%;
+    height: auto;
+  }
+
+  #kenny_char {
+    max-width: 40%;
+    height: auto;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1799px) {
+
+  #cartman {
+    max-width: 40%;
+    height: auto;
+    margin-right: 60px;
+  }
+
+  #stan {
+    max-width: 30%;
+    height: auto;
+    margin-right: 80px;
+    margin-left: 30px;
+  }
+
+  #kyle {
+    max-width: 35%;
+    height: auto;
+    margin-right: 80px;
+  }
+
+  #kenny_char {
+    max-width: 30%;
+    height: auto;
+    margin-right: 80px;
+  }
+}
+
+@media screen and (min-width: 1630px) {
+
+  video {
+    width: 80%;
+    height: auto;
+    padding-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  #cartman {
+    max-width: 35%;
+    height: auto;
+    margin-right: 60px;
+  }
+
+  #stan {
+    max-width: 25%;
+    height: auto;
+    margin-right: 80px;
+    margin-left: 30px;
+  }
+
+  #kyle {
+    max-width: 30%;
+    height: auto;
+    margin-right: 80px;
+  }
+
+  #kenny_char {
+    max-width: 25%;
+    height: auto;
+    margin-right: 80px;
+    margin-left: 40px;
   }
 }
