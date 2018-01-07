@@ -42,7 +42,12 @@ f) Do the charts move and stack correctly when the screen size is changed?
 g) Does the font size of various parts of the site (such as navigation and footer) change for smaller screens?
    - Yes/Pass
 
-h) Does the parallax section of the page act as parallax scrolling is designed to, including on smaller screens?
+h) Does the parallax section of the page act as parallax scrolling is designed to?
+   - Yes/Pass
+     - Note: The way the parallax scroll feature is designed means that it is liable to fail on some small devices.
+       Therefore, it has been disabled via a media query on phone-sized devices to avoid mishaps.
+
+i) Does the arrow button disappear on small devices?
    - Yes/Pass
 
 

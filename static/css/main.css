@@ -249,9 +249,10 @@ hr {
 }
 
 /* Media Queries */
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 640px) {
 
   .parallax {
+    background-attachment: scroll;
     height: 70%;
   }
 
