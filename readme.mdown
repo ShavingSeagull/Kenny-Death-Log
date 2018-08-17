@@ -1,9 +1,5 @@
 # Kenny's Death Log
 
-**And the survey from Travis says:**
-
-[![Build Status](https://travis-ci.org/ShavingSeagull/Kenny-Death-Log.svg?branch=master)](https://travis-ci.org/ShavingSeagull/Kenny-Death-Log)
-
 ## Overview
 
 **You can find the live site on [Heroku](https://kenny-death-log.herokuapp.com/).**
