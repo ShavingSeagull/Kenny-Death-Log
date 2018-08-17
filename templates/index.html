@@ -5,12 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kenny's Death Log</title>
+  <!-- Favicon for IE9 and lower -->
+  <!--[if IE]><link rel="shortcut icon" href="{{ url_for ('static', filename='images/favicon_IE.ico') }}"><![endif]-->
+  <!-- Favicons for Apple and standard format -->
+  <link rel="apple-touch-icon-precomposed" href="{{ url_for ('static', filename='images/favicon_apple.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for ('static', filename='images/favicon.png') }}">
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/bootstrap.min.css')}}">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+  <!-- Charts libraries -->
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/keen-dashboards.css') }}">
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css') }}">
   <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css') }}">
+  <!-- Google font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="{{ url_for ('static', filename='css/main.css') }}">
 </head>
 <body>
@@ -55,6 +64,7 @@
     </footer>
   </section>
 
+  <!-- JS Scripts -->
   <script src="{{ url_for ('static', filename='lib/js/jquery.min.js') }}"></script>
   <script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js') }}"></script>
   <script src="{{ url_for ('static', filename='lib/js/crossfilter.js') }}"></script>
