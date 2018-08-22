@@ -1,3 +1,9 @@
+##### And the survey from Travis says:
+
+[![Build Status](https://travis-ci.org/ShavingSeagull/Kenny-Death-Log.svg?branch=master)](https://travis-ci.org/ShavingSeagull/Kenny-Death-Log)
+
+###### (Pull requests will be ignored. This is an educational project and must remain a solo effort.)
+
 # Kenny's Death Log
 
 ## Overview
