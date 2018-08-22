@@ -57,8 +57,11 @@ The major focus of this website is to display the dataset created to chart the n
   - I use **Queue** for asynchronous tasking
 - [Intro.js](https://introjs.com/)
   - I use **Intro.js** to handle the tour guide
-- Manual testing
-	- The site is manually tested, which is sufficient for this project
+
+### Testing
+
+Testing is done using Python's unittest module to test the routing of the site. Extensive manual tests cover the remainder
+of the site's functionality, as the site is small by design.
 
 ## Acknowledgements
 
